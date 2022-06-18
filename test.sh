@@ -1,2 +1,2 @@
 sleep $(($RANDOM % 5))
-echo "done."
+echo "tests passed."
