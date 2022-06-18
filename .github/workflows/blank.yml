@@ -27,11 +27,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: One-line script
-        run: sleep 18
+        run: sleep $(($RANDOM%20)) && echo "step one"
 
       # Runs a set of commands using the runners shell
       - name: Multi-line script
         run: |
-          sleep 12
-          sleep 27
-          sleep 5
+          sleep $(($RANDOM%20)) && echo "step one"
+          sleep $(($RANDOM%20)) && echo "step two"
+          sleep $(($RANDOM%20)) && echo "step three"
